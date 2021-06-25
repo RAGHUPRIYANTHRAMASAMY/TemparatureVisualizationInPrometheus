@@ -53,11 +53,12 @@ public class ListTemperatureGivenRange {
 	
 	public static void isLeapYear(int year) {
 		if( ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0) ){
-			if(tempEndDate != monthTotalDate[1])
-	             monthTotalDate[1] = 29; 
-	    }else {
-	    	monthTotalDate[1] = 28;
-	    }
+		   if(tempEndDate != monthTotalDate[1])
+	             	monthTotalDate[1] = 29; 
+		}else {
+		   if(tempEndDate != monthTotalDate[1])
+			monthTotalDate[1] = 28;
+		}
 		
 	}
 	
